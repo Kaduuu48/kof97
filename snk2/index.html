@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The king of Fighters</title>
+  </head>
+  <body>
+    <!-- Header -->
+<header>
+  
+  <div class="header-content">
+      <div class="logo">
+          <img src="./img/kofsf.png" alt="Logo KOF" class="logo-img">
+      </div>
+      <div class="search-container">
+          <input type="text" placeholder="Pesquisar..." class="search-input" id="search-input">
+          <button class="search-button" id="search-button">
+              <img src="./img/lupa (2).png" alt="Pesquisar" class="search-icon">
+          </button>
+          <button class="atualizar" onclick="mostrarTodosCards()"> Voltar</button>
+      </div>
+      <div class="logo-snk">
+        <img src="./img/snksf.png" alt="logo snk">
+      </div>
+    </div>
+</header>
+
+<div id="mensagem-erro" class="erro-busca" style="display: none;">Nenhum Resultado encontrado.</div>
+    
+    <div class="personagens">
+      <div class="conteudo">
+      <div class="container blue">
+        <div class="imagem">
+          <img src="./img/bluesf.png" alt="blue marie" />
+          <h2 class="nome-todos" id="Blue"onclick="abrirModal('modal-blue')">Blue Mary</h2>
+        </div>
+       </div>
+      </div>
+    
+      <div class="container may">
+        <div class="imagem">
+          <img src="./img/mai1.png" alt="may" />
+          <h2 class="nome-todos" id="may" onclick="abrirModal('modal-may')">Mai</h2>
+        </div>
+      </div>
+    
+      <div class="container kyo">
+        <div class="imagem">
+          <img src="./img/kyo1.png" alt="kyo" />
+          <h2 class="nome-todos" id="kyo" onclick="abrirModal('modal-kyo')">Kyo</h2>
+        </div>
+      </div>
+    
+      <div class="container leona">
+        <div class="imagem">
+          <img src="./img/leona1.png" alt="leona" />
+          <h2 class="nome-todos" id="leona"onclick="abrirModal('modal-leona')">Leona</h2>
+        </div>
+      </div>
+    
+     
+  </div>
+
+  <div class="personagens1">
+
+    <div class="container iori">
+      <div class="imagem">
+        <img src="./img/iori.png" alt="iori" />
+        <h2 class="nome-todos" id="iori"onclick="abrirModal('modal-iori')">Iori</h2>
+      </div>
+   </div>
+    
+    <div class="container terry">
+      <div class="imagem">
+        <img src="./img/terry1.png" alt="terry" />
+        <h2 class="nome-todos" id="terry"onclick="abrirModal('modal-terry')">Terry</h2>
+      </div>
+    </div>
+
+    
+    <div class="container robert">
+      <div class="imagem">
+        <img src="./img/Robert_Garcia_KOF97.webp" alt="terry" />
+        <h2 class="nome-todos" id="robert"onclick="abrirModal('modal-robert')">Robert</h2>
+      </div>
+    </div>
+
+    <div class="container yuri">
+      <div class="imagem">
+        <img src="./img/yuri1.png" alt="Yuri" />
+        <h2 class="nome-todos" id="yuri"onclick="abrirModal('modal-yuri')">Yuri</h2>
+      </div>
+     </div>
+  </div>
+
+    <div id="modal-blue" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-blue')"
+          >&times;</span
+        >
+        <h2 class="nome">Blue Mary</h2>
+        <p>Data de nascimento:<strong> 4 de fevereiro de 1973</strong></p>
+        <p>Altura:<strong> 168 cm (5'6")</strong></p>
+        <p>Peso:<strong> 49 kg (108 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Detetive particular</strong></p>
+        <p>Estilo de luta:<strong> Comando Sambo</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-may" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-may')"
+          >&times;</span
+        >
+        <h2 class="nome">Mai Shiranui</h2>
+        <p>Data de nascimento:<strong> 1 de janeiro de 1974</strong></p>
+        <p>Altura:<strong> 165 cm (5'5 ")</strong></p>
+        <p>Peso:<strong> 49 kg (108 libras)</strong></p>
+        <p>
+          Emprego/Ocupação:<strong>
+            Shiranui Ninja, herdeira do clã Shiranui</strong
+          >
+        </p>
+        <p>Estilo de luta:<strong> Shiranui-ryuu Ninjutsu</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-kyo" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-kyo')"
+          >&times;</span
+        >
+        <h2 class="nome">Kyo Kusanagi</h2>
+        <p>Data de nascimento:<strong> 12 de dezembro de 1973</strong></p>
+        <p>Altura:<strong> 1.81 m (5'9")</strong></p>
+        <p>Peso:<strong> 75 kg (163 lbs)</strong></p>
+        <p>Emprego/Ocupação:<strong> Detetive particular</strong></p>
+        <p>
+          Estilo de luta:<strong>
+            Estilo Kusanagi de artes marciais antigas</strong
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="modal-leona" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-leona')"
+          >&times;</span
+        >
+        <h2 class="nome">	Leona Heidern</h2>
+        <p>Data de nascimento:<strong> 10 de Janeiro de 1973</strong></p>
+        <p>Altura:<strong> 176 cm (5'6")</strong></p>
+        <p>Peso:<strong> 65 kg (108 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Soldado da linha da frente dos Ikari Warrior</strong></p>
+        <p>Estilo de luta:<strong> Artes Marciais + Técnicas de assassinato estilo Heidern</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-iori" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-iori')"
+          >&times;</span
+        >
+        <h2 class="nome">Iori Yagami</h2>
+        <p>Data de nascimento:<strong> 25 de março de 1973</strong></p>
+        <p>Altura:<strong> 182 cm (6'0")</strong></p>
+        <p>Peso:<strong> 79 kg (174 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Músico (guitarrista de uma banda de música);</strong></p>
+        <p>Estilo de luta:<strong> Estilo Yagami de artes marciais antigas + puro instinto</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-terry" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-terry')"
+          >&times;</span
+        >
+        <h2 class="nome">Terry Bogard</h2>
+        <p>Data de nascimento:<strong> 	15 de Março de 1973</strong></p>
+        <p>Altura:<strong> 182 cm (6'7")</strong></p>
+        <p>Peso:<strong> 83 kg (188 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Nenhum (Faz alguns bicos para ganhar dinheiro)</strong></p>
+        <p>Estilo de luta:<strong> Artes Marciais e técnicas aprendidas com Jeff</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-robert" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-robert')"
+          >&times;</span
+        >
+        <h2 class="nome"> Robert Garcia</h2>
+        <p>Data de nascimento:<strong> 25 de Dezembro  de 1973</strong></p>
+        <p>Altura:<strong> 1.80 m (5'6")</strong></p>
+        <p>Peso:<strong> 85 kg (108 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Fazer conceitos futurísticos de carro</strong></p>
+        <p>Estilo de luta:<strong> Caratê Kyokugen</strong></p>
+      </div>
+    </div>
+
+    <div id="modal-yuri" class="modal">
+      <div class="descricao">
+        <span class="btn-fechar" onclick="fecharModal('modal-yuri')"
+          >&times;</span
+        >
+        <h2 class="nome">Yuri Sakazaki</h2>
+        <p>Data de nascimento:<strong>  7 de Dezembro de 1973</strong></p>
+        <p>Altura:<strong> 168 cm (5'6")</strong></p>
+        <p>Peso:<strong> 59 kg (108 libras)</strong></p>
+        <p>Emprego/Ocupação:<strong> Cantar no Karaokê e ler receitas</strong></p>
+        <p>Estilo de luta:<strong> Caratê Kyokugen</strong></p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo-footer">
+          <img src="./img/kofsf.png" alt="Logo KOF" class="logo-img-footer">
+          
+        </div>
+        <p class="copyright">&copy; 2024 Todos os direitos reservados. Desenvolvido por Luiz Ricardo.</p>
+        <div class="logo-snk1">
+          <img src="./img/snksf.png" alt="logo snk">
+        </div>
+      </div>
+      
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

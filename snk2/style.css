@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background: linear-gradient(90deg, #999b9ef8, #3b3d3d);
+ 
+    font-family: "Sour Gummy", sans-serif;
+  
+}
+header {
+    width: 100%;
+    height: 120px;
+   
+    display: flex;
+    flex-direction: column; /* Layout em coluna para o título */
+    align-items: center; /* Centralizar horizontalmente */
+    padding: 10px;
+   background: linear-gradient(90deg, #7892c4, #379488, #1e208f);
+    color: white;
+  }
+  .header-content {
+    display: flex; /* Layout em linha para o conteúdo do header */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: space-between; /* Espaço entre os elementos */
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+  
+  .nav-container {
+    margin-right: 5px; /* Alinhar ícones de navegação à esquerda */
+  }
+  
+  .nav-list {
+    justify-content: flex-end;
+    list-style: none; /* Remover marcadores da lista */
+    display: flex; /* Usar flexbox para o menu */
+    gap: 10px; /* Espaço entre os itens do menu */
+  }
+  
+  .nav-list li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #f70909; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    font-weight: 600;
+  }
+  
+  .nav-list li a:hover {
+    color: #007BFF; /* Cor do texto ao passar o mouse */
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centralizar o campo de pesquisa */
+    flex-grow: 1; /* Permitir que o campo de pesquisa ocupe espaço disponível */
+  }
+  
+  .search-input {
+    width: 100%; /* Largura total do campo de pesquisa */
+    max-width: 400px; /* Largura máxima do campo de pesquisa */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do campo */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .search-button {
+    background: none; /* Sem fundo */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Mudar cursor para ponteiro */
+    margin-left: 5px; /* Espaço entre o campo e o botão */
+  }
+  
+  .search-icon {
+    width: 30px; /* Tamanho da imagem da lupa */
+    height: 30px; /* Tamanho da imagem da lupa */
+  }
+  
+  .logo {
+    margin-left: auto; /* Alinhar logo à direita */
+  }
+  
+  .logo-img img {
+    width: 80px; /* Ajustar o tamanho do logo conforme necessário */
+    height: 100px;
+  }
+  .logo-snk img{
+    width: 150px;
+    position: absolute;
+    right: 25px;
+  }
+  .logo-snk1 img{
+    width: 150px;
+    position: absolute;
+    right: 25px;
+    bottom: 0px;
+  }
+  
+  footer {
+    background: linear-gradient(90deg, #7892c4, #379488, #1e208f);
+    color: white; /* Para garantir legibilidade no texto */
+  }
+  
+  
+  footer {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+   width: 100%;
+    padding: 5px; /* Espaçamento interno */
+    display: flex; /* Usar flexbox para o layout */
+    justify-content: space-between; /* Espaçar os itens */
+    align-items: center; /* Centralizar verticalmente */
+  }
+  
+  .footer-content {
+    display: flex; /* Usar flexbox para o conteúdo do footer */
+    align-items: center; /* Centralizar verticalmente */
+    width: 100%; /* Largura total */
+  }
+  
+  .logo-footer .logo-img-sn {
+    flex: 1; /* O logo ocupa a parte esquerda */
+    width: 50px;
+    height: auto;
+  
+  }
+  
+  
+  .logo-img-footer img {
+    width: 50px;
+    height: auto;
+    max-width: 100px; /* Ajustar o tamanho do logo (ajuste conforme necessário) */
+    
+  }
+  .logo-img-snk{
+    width: 100px;
+    flex: 2;
+  }
+  
+  .copyright {
+    flex: 3; /* A mensagem ocupa o meio */
+    text-align: center; /* Centralizar texto */
+    margin: 0; /* Remover margem */
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffee00;
+  }
+  .atualizar{
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: rgb(0, 162, 255);
+    color: white;
+    border-radius: 5px;
+  }
+  .erro-busca {
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+    display: none; /* Escondido por padrão */
+  }
+  
+  
+  .social-icons {
+    flex: 1; /* Ícones de redes sociais ocupam a parte direita */
+    display: flex; /* Usar flexbox para os ícones */
+    justify-content: flex-end; /* Alinhar ícones à direita */
+    gap: 20px; /* Espaço entre os ícones */
+  }
+  
+  .social-icons img {
+    width: 50px; /* Ajustar tamanho dos ícones (ajuste conforme necessário) */
+    height: auto; /* Ajustar tamanho dos ícones */
+  }  
+ul{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    margin-left: 10px; /* Espaçamento à esquerda */
+    font-size: 14px; /* Tamanho da fonte */
+  }
+  
+  .search-input:focus {
+    border-color: rgba(255, 0, 0, 0.7); /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+  }
+
+.logo-kof {
+    position: absolute;
+    top: 20px;
+    width: 135px;
+    height: 100px;
+}
+.logo-snk{
+    position: absolute;
+    right: 15px;
+    top:20px;
+    width: 125px;
+    height: 100px;
+}
+.imagem img{
+    width: 200px;
+    height: 200px;
+}
+
+.personagens{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.personagens1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.modal{
+    display: none; /* Modal oculto por padrão */
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+
+width: 65%; /* Aumentei a largura máxima */
+
+height: 65%; /* Define uma altura mínima maior */
+background-color: rgba(192, 184, 184, 0.9);
+padding: 20px;
+
+border-radius: 10px;
+
+}
+.btn-fechar{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    border: 2px solid transparent; /* Borda inicial */
+    padding: 10px;
+    border-radius: 8px; /* Cantos arredondados */
+    transition: 0.3s ease; /* Suavidade na transição */
+  }
+  
+  
+  
+  /* Cores das sombras específicas para cada personagem */
+  .container.blue:hover {
+    box-shadow: 0px 0px 14px 15px  rgba(8, 4, 243, 0.7); /* Sombra azul */
+  }
+  .container.robert:hover {
+    box-shadow: 0px 0px 14px 15px  rgba(245, 170, 31, 0.7); /* Sombra laranja */
+  }
+  .container.may:hover {
+    box-shadow: 0px 0px 14px 15px  rgba(243, 4, 4, 0.5); /* Sombra rosa */
+  }
+  
+  .container.kyo:hover {
+    box-shadow: 0px 0px 14px 15px  rgba(243, 195, 4, 0.5); /* Sombra amarela */
+  }
+  
+  .container.leona:hover {
+    box-shadow: 0px 0px 14px 15px  rgba(12, 160, 17, 0.5); /* Sombra verde */
+  }
+  
+  .container.iori:hover {
+    box-shadow: 0px 0px 10px 10px  rgba(107, 34, 156, 0.5); /* Sombra roxa */
+  }
+  .container.terry:hover {
+    box-shadow: 0px 0px 10px 10px rgba(243, 111, 4, 0.929); /* Sombra laranja */
+  }
+  .container.yuri:hover {
+    box-shadow: 0px 0px 10px 10px rgba(140, 5, 167, 0.929); /* Sombra roxo */
+  }
+  
+.descricao{
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: rgb(10, 9, 9);
+
+}
+.nome{
+    font-size: 35px;
+    font-weight: bold;
+    color: #f70909;
+}
+.nome-todos{
+    font-size: 25px;
+    color: white;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+}
+#iori:hover {
+    color: rgba(107, 34, 156, 0.929);
+}
+#leona:hover{
+    color: rgba(12, 160, 17, 0.929);
+}
+#Blue:hover{
+    color: rgba(8, 4, 243, 0.929);
+}
+#may:hover{
+    color: rgba(243, 4, 4, 0.929);
+}
+#kyo:hover{
+    color:  rgba(243, 195, 4, 0.929);
+}
+#terry:hover{
+    color:  rgba(243, 111, 4, 0.929);
+}
+#robert:hover{
+    color: rgba(245, 170, 31, 0.929);
+}
+#yuri:hover{
+    color:  rgba(140, 5, 167, 0.929);
+}
+
+
+
+#modal-blue{
+    box-shadow: 10px 20px 80px rgba(8, 4, 243, 0.929);
+}
+#modal-may{
+    box-shadow: 10px 20px 80px rgba(243, 4, 4, 0.929); 
+}
+#modal-kyo{
+    box-shadow: 10px 20px 80px rgba(243, 195, 4, 0.929);    
+}
+#modal-leona{
+    box-shadow: 10px 20px 80px rgba(12, 160, 17, 0.929); 
+}
+#modal-iori{
+    box-shadow: 10px 20px 80px rgba(107, 34, 156, 0.929); 
+}
+#modal-terry{
+    box-shadow: 10px 20px 80px rgba(243, 111, 4, 0.929);
+}
+#modal-robert{
+    box-shadow: 10px 20px 80px rgba(245, 170, 31, 0.929);
+}
+#modal-yuri{
+    box-shadow: 10px 20px 80px rgba(140, 5, 167, 0.929);
+}
+
